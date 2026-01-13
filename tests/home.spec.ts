@@ -1,16 +1,19 @@
 import { test, expect } from '@playwright/test';
-import { ENV_CONFIG } from '../utils/envConfig';
+import HomePage from '../pages/home-page';
 
-test('has title', async ({ page }) => {
+//Declare variables
+let homePage: HomePage;
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+test.beforeEach(async ({ page }) => {
+  await page.goto('/');
+  homePage = new HomePage(page);
 });
 
-test('get started link', async ({ page }) => {
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+test('has title', async ({ page }) => {
+  await homePage.assertPageTitle();
+});
 
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+test('validate home categories are visible', async ({ page }) => {
+  await homePage.asserstionCategories();
+  await homePage.clickOnElementsCategory();
 });
