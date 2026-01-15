@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import HomePage from '../pages/home-page';
 
 //Declare variables
@@ -9,11 +9,11 @@ test.beforeEach(async ({ page }) => {
   homePage = new HomePage(page);
 });
 
-test('has title', async ({ page }) => {
+test('has title', async () => {
   await homePage.assertPageTitle();
 });
 
-test('validate home categories are visible', async ({ page }) => {
+test('validate home categories are visible', async () => {
   await homePage.asserstionCategories();
   await homePage.clickOnElementsCategory();
 });
