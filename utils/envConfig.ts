@@ -8,7 +8,7 @@ const currentEnv = (process.env.APP_ENV as envConfig) || 'staging';
 
 // Export the configuration for the current environment
 export const ENV_CONFIG = {
-    BASE_URL: environments[currentEnv].baseURL,
-    API_URL: environments[currentEnv].apiURL,
-    NAME: currentEnv
+  BASE_URL: environments[currentEnv].baseURL,
+  API_URL: environments[currentEnv].apiURL,
+  NAME: currentEnv,
 };
