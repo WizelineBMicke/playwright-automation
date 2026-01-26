@@ -9,6 +9,10 @@ export class TextBoxElementsPage {
   readonly permanentAddressInput: Locator;
   readonly componentTitle: Locator;
   readonly submitButton: Locator;
+  readonly fullNameOutput: Locator;
+  readonly emailOutput: Locator;
+  readonly currentAddressOutput: Locator;
+  readonly permanentAddressOutput: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -18,10 +22,24 @@ export class TextBoxElementsPage {
     this.currentAddressInput = page.locator('#currentAddress');
     this.permanentAddressInput = page.locator('#permanentAddress');
     this.submitButton = page.locator('#submit');
+    this.fullNameOutput = page.locator('#name');
+    this.emailOutput = page.locator('#email');
+    this.currentAddressOutput = page.locator('p[id="currentAddress"]');
+    this.permanentAddressOutput = page.locator('p[id="permanentAddress"]');
   }
 
   async assertSectionTitle() {
     await expect(this.componentTitle).toHaveText('Text Box');
+  }
+
+  async assertFormInformationOutput(data: TextBoxPagePayload) {
+    await expect(this.fullNameOutput).toHaveText(data.fullName);
+    await expect(this.emailOutput).toHaveText(data.email);
+    await expect(this.currentAddressOutput).toHaveText(data.currentAddress);
+
+    if (data.permanentAddress) {
+      await expect.soft(this.permanentAddressOutput).toHaveText(data.permanentAddress);
+    }
   }
 
   async fillFormInputs(data: TextBoxPagePayload) {

@@ -1,6 +1,20 @@
 {
-  "fullName": "Mike Tester",
-  "email": "mike.tester@example.com",
-  "currentAddress": "123 Main Street",
-  "permanentAddress": "456 Oak Avenue"
+  "ValidInformation": {
+    "fullName": "Mike Tester",
+    "email": "mike.tester@example.com",
+    "currentAddress": "123 Main Street",
+    "permanentAddress": "456 Oak Avenue"
+  },
+  "InvalidInformation": {
+    "fullName": "",
+    "email": "invalid-email",
+    "currentAddress": "",
+    "permanentAddress": ""
+  },
+  "VerifyOutputInformation": {
+    "fullName": "Name:Mike Tester",
+    "email": "Email:mike.tester@example.com",
+    "currentAddress": "Current Address :123 Main Street",
+    "permanentAddress": "Permanent Address :456 Oak Avenue"
+  }
 }

@@ -10,7 +10,8 @@
     "test:textbox": "npx playwright test textbox-elements.spec.ts --headed --project=chromium",
     "test:dev": "APP_ENV=dev npx playwright test",
     "test:staging": "APP_ENV=staging npx playwright test",
-    "test:prod": "APP_ENV=prod npx playwright test"
+    "test:prod": "APP_ENV=prod npx playwright test",
+    "show-report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",

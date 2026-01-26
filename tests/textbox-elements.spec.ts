@@ -19,5 +19,7 @@ test('Validating Text Box Components', async () => {
   await homePage.clickOnElementsCategory();
   await leftPanelPage.leftPanelAssertions();
   await leftPanelPage.clickOnPanelMenuItem('Elements', 'Text Box');
-  await textBoxElementsPage.fillFormInputs(testData);
+  await textBoxElementsPage.fillFormInputs(testData.ValidInformation);
+  await textBoxElementsPage.clickOnSubmitButton();
+  await textBoxElementsPage.assertFormInformationOutput(testData.VerifyOutputInformation);
 });
