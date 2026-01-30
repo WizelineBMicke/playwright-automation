@@ -5,7 +5,7 @@ import HomePage from '../pages/home-page';
 let homePage: HomePage;
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('/');
+  await page.goto('');
   homePage = new HomePage(page);
 });
 

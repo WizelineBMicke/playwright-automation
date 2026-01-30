@@ -1,0 +1,53 @@
+{
+  "Elements": "Elements",
+  "ElementsSubMenu": {
+    "TextBox": "Text Box",
+    "CheckBox": "Check Box",
+    "RadioButton": "Radio Button",
+    "WebTables": "Web Tables",
+    "Buttons": "Buttons",
+    "Links": "Links",
+    "BrokenLinksImages": "Broken Links - Images",
+    "UploadAndDownload": "Upload and Download",
+    "DynamicProperties": "Dynamic Properties"
+  },
+  "Forms": "Forms",
+  "FormsSubMenu": {
+    "PracticeForm": "Practice Form"
+  },
+  "AlertsFrameWindows": "Alerts, Frame & Windows",
+  "AlertsFrameWindowsSubMenu": {
+    "BrowserWindows": "Browser Windows",
+    "Alerts": "Alerts",
+    "Frames": "Frames",
+    "NestedFrames": "Nested Frames",
+    "ModalDialogs": "Modal Dialogs"
+  },
+  "Widgets": "Widgets",
+  "WidgetsSubMenu": {
+    "Accordian": "Accordian",
+    "AutoComplete": "Auto Complete",
+    "DatePicker": "Date Picker",
+    "Slider": "Slider",
+    "ProgressBar": "Progress Bar",
+    "Tabs": "Tabs",
+    "ToolTips": "Tool Tips",
+    "Menu": "Menu",
+    "SelectMenu": "Select Menu"
+  },
+  "Interactions": "Interactions",
+  "InteractionsSubMenu": {
+    "Sortable": "Sortable",
+    "Selectable": "Selectable",
+    "Resizable": "Resizable",
+    "Droppable": "Droppable",
+    "Dragabble": "Dragabble"
+  },
+  "BookStoreApplication": "Book Store Application",
+  "BookStoreApplicationSubMenu": {
+    "Login": "Login",
+    "BookStore": "Book Store",
+    "Profile": "Profile",
+    "BookStoreAPI": "Book Store API"
+  }
+}
