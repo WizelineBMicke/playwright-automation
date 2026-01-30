@@ -4,11 +4,11 @@
     "apiURL": "http://localhost:4000/api"
   },
   "staging": {
-    "baseURL": "https://demoqa.com/",
+    "baseURL": "https://demoqa.com",
     "apiURL": "https://demoqa.com/api"
   },
   "prod": {
-    "baseURL": "https://demoprod.com/",
+    "baseURL": "https://demoprod.com",
     "apiURL": "https://demoprod.com/api"
   }
 }

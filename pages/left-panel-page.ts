@@ -17,12 +17,12 @@ export class LeftPanelPage {
   }
 
   async clickOnPanelMenuItem(panelHeader: string, panelItem: string) {
-    const groupElement = this.groupElements.filter({ hasText: panelHeader });
+    const groupElement = this.groupElements.filter({ has: this.page.getByText(panelHeader, { exact: true }) });
     const collapsedElement = groupElement.locator('.element-list.collapse.show');
     if ((await collapsedElement.count()) === 0) {
-      await this.groupElements.filter({ hasText: panelHeader }).click();
+      await groupElement.click();
     }
-    await this.groupItem.filter({ hasText: panelItem }).click();
+    await this.groupItem.filter({ has: this.page.getByText(panelItem, { exact: true }) }).click();
   }
 }
 export default LeftPanelPage;

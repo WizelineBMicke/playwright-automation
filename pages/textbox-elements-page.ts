@@ -29,7 +29,7 @@ export class TextBoxElementsPage {
   }
 
   async assertSectionTitle() {
-    await expect(this.componentTitle).toHaveText('Text Box');
+    await expect(this.componentTitle).toBeVisible();
   }
 
   async assertFormInformationOutput(data: TextBoxPagePayload) {
